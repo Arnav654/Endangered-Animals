@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Endangered Animals</title>
+    <style>
+        /* Resetting some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            background-color: #e8f5e9; /* Very light green background for a fresh feel */
+            padding-top: 80px; /* Adjust this padding to match the header height */
+        }
+
+        header {
+            background-color: #388e3c; /* Dark green for the header */
+            color: #fff;
+            padding: 30px 0; /* Increased padding for a larger header area */
+            text-align: center;
+            position: fixed; /* Fixes the header at the top */
+            top: 0;
+            left: 0;
+            width: 100%; /* Ensures the header spans the full width */
+            z-index: 1000; /* Keeps header on top of other elements */
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 25px; /* Increased margin between menu items */
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 24px; /* Increased font size for navigation links */
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #4caf50, #66bb6a); /* Green gradient background */
+            color: #fff;
+            text-align: center;
+            padding: 60px 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            background-color: #fff;
+            color: #388e3c; /* Dark green text */
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            display: inline-block;
+            border: 2px solid #388e3c; /* Dark green border */
+        }
+
+        .cta-button:hover {
+            background-color: #f0f0f0; /* Light grey on hover */
+        }
+
+        .highlights {
+            display: flex;
+            flex-direction: column; /* Stack items vertically */
+            gap: 20px; /* Space between items */
+            margin-top: 20px;
+        }
+
+        .highlights h2 {
+            margin-bottom: 20px;
+            font-size: 2em; /* Larger font size for the heading */
+        }
+
+        .highlight-box {
+            display: flex;
+            gap: 20px; /* Space between text and image */
+            align-items: center;
+            background-color: #c8e6c9; /* Light green background */
+            border: 2px solid #4caf50; /* Green border */
+            border-radius: 8px;
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        .highlight-box img {
+            flex-shrink: 0; /* Prevent image from shrinking */
+            width: 400px; /* Set a fixed width for images */
+            height: auto;
+            object-fit: cover; /* Ensures the image covers the area */
+        }
+
+        .highlight-text {
+            flex: 1; /* Allow text to take up remaining space */
+        }
+
+        .highlight-text h3 {
+            color: #4caf50; /* Green color for headings */
+            margin-bottom: 10px;
+            font-size: 1.5em; /* Larger font size for headings */
+        }
+
+        .highlight-text p {
+            font-size: 1.1em; /* Slightly larger font size for paragraphs */
+            line-height: 1.6; /* Improve readability with increased line height */
+        }
+
+        footer {
+            background-color: #388e3c;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed; /* Ensures footer is positioned normally */
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="species.html">Species</a></li>
+                <li><a href="conservation.html">Conservation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Welcome to the Endangered Animals Website</h1>
+            <p>Discover the beauty of wildlife and join us in our mission to protect endangered species around the world.</p>
+            <a href="species.html" class="cta-button">Explore Species</a>
+        </section>
+        <section class="highlights">
+            <h2 align=center>Why It Matters</h2>
+            <div class="highlight-box">
+                <img src="https://cdn.britannica.com/71/174271-050-B90CC219/Siberian-tiger-Longleat-Safari-Adventure-Park-England.jpg" alt="Siberian Tiger">
+                <div class="highlight-text">
+                    <h3>Wildlife Conservation</h3>
+                    <p>Wildlife conservation is crucial for maintaining biodiversity, which helps ecosystems function smoothly. Preserving endangered species helps maintain the balance of our natural world, ensuring that ecosystems remain healthy and resilient.</p>
+                    <p>Conservation efforts also protect habitats that are vital for many other species, including humans. By safeguarding these areas, we support the survival of various species and promote a sustainable environment for future generations.</p>
+                    <p>In addition to preserving animal species, conservation efforts often lead to the protection of plant life and natural resources. This holistic approach benefits entire ecosystems and ensures that both flora and fauna can thrive together.</p>
+                    <p>Moreover, the knowledge and research gained from studying endangered species can contribute to medical advancements and innovations, benefiting human health and well-being.</p>
+                </div>
+            </div>
+            <div class="highlight-box">
+                <img src="https://www.metroparks.net/wp-content/uploads/2017/06/1080p_HBK_autumn-morning_GI.jpg" alt="Wildlife Conservation">
+                <div class="highlight-text">
+                    <h3>Preserve Habitats</h3>
+                    <p>Protecting endangered animals means preserving their natural habitats, which are crucial for the survival of many species. By ensuring that habitats are not destroyed or degraded, we help maintain the delicate balance of ecosystems.</p>
+                    <p>Healthy habitats support not only the target species but also other wildlife that depends on these environments. For example, preserving a rainforest not only helps the species living within it but also affects global climate patterns and air quality.</p>
+                    <p>Efforts to restore and protect habitats often include reforestation, wetlands conservation, and the establishment of protected areas. These actions contribute to long-term ecological stability and sustainability.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Endangered Animals Website</p>
+    </footer>
+</body>
+</html>
